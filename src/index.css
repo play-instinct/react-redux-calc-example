@@ -5,7 +5,7 @@ body {
 }
 
 label {
-    width: 150px;
+    width: 250px;
     display: inline-block;
 }
 
@@ -17,14 +17,32 @@ label {
   font-size: 20px;
   padding: 20px;
   font-family: Open Sans;
+  color: #7648bd;
+  font-weight: bold;
+  border: 10px solid #7648bd;
   
 }
 
+
+.form-group {
+  border-bottom: 1px dashed #7648bd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 #logo{
-  margin: 50px auto;
+  margin: 30px auto;
+  text-align: center;
  
 }
 
+input {
+  font-size: 23px;
+    border: none;
+    color: #62dafc;
+    background-color: #faf8f5;
+    padding: 3px;
+}
 
 #logo img {
    width: 150px;
