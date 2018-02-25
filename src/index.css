@@ -11,7 +11,22 @@ label {
 
 
 #root {
-  margin: 0 auto;
-  border: 2px solid black;
-  text-align: center;
+  margin: 50px auto;
+  border: 1px solid grey;
+  width: 500px;
+  font-size: 20px;
+  padding: 20px;
+  font-family: Open Sans;
+  
+}
+
+#logo{
+  margin: 50px auto;
+ 
+}
+
+
+#logo img {
+   width: 150px;
+  height: 150px;
 }
