@@ -1,7 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
+//import actions
 
-// Update this component
+import {setInterest, setPrincipal, setYears} from '../actions';
+
+
 export function InterestCalculator(props) {
     return (
         <form className="interest-calculator"
@@ -9,17 +12,17 @@ export function InterestCalculator(props) {
             <div className="form-group">
                 <label htmlFor="principal">Principal ($)</label>
                 <input type="number" id="principal" value={props.principal}
-                    min="0" />
+                    min="0" onChange={e => props.dispatch(setPrincipal(e.target.value))} />
             </div>
             <div className="form-group">
                 <label htmlFor="interest">Interest rate (%)</label>
                 <input type="number" id="interest" value={props.interest}
-                    min="0" max="100" step="0.1" />
+                    min="0" max="100" step="0.1"  onChange={e => props.dispatch(setInterest(e.target.value))}/>
             </div>
             <div className="form-group">
                 <label htmlFor="years">Years</label>
                 <input type="number" id="years" value={props.years}
-                    min="0" max="100" />
+                    min="0" max="100" onChange={e => props.dispatch(setYears(e.target.value))}/>
             </div>
             <div className="form-group">
                 <label htmlFor="total">Total</label>
